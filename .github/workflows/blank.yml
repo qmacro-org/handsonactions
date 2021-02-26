@@ -1,5 +1,11 @@
 name: hello world
-on: [push, workflow_dispatch]
+on: 
+  workflow_dispatch:
+    inputs:
+      firstname:
+        description: What is your name
+        required: false
+        default: Max
 jobs:
   job-one:
     runs-on: ubuntu-latest
