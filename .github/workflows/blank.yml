@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: echo Hello, ${{ github.events.inputs.firstname }}!
+        run: echo Hello, ${{ github.event.inputs.firstname }}
